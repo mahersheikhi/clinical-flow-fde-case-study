@@ -1,0 +1,19 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "REF-2048",
+  "status": "active",
+  "intent": "order",
+  "code": { "text": "Neurology consult" },
+  "subject": { "reference": "Patient/SIM-001", "display": "Synthetic patient" },
+  "requester": { "display": "Synthetic primary-care clinic" },
+  "supportingInfo": [
+    { "reference": "Document/SIM-NEURO-HISTORY" },
+    { "reference": "Document/SIM-IMAGING-SUMMARY" },
+    { "reference": "Document/SIM-MEDICATIONS" }
+  ],
+  "extension": [
+    { "url": "https://clinicalflow.example/required-fields", "valueInteger": 8 },
+    { "url": "https://clinicalflow.example/completed-fields", "valueInteger": 7 },
+    { "url": "https://clinicalflow.example/missing-field", "valueString": "symptom_onset_date" }
+  ]
+}
